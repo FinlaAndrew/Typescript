@@ -36,7 +36,18 @@ class Mammal extends Animal {
       super(name, age, sound);
     }
   
-    feedMilk(): void {
+    swim(): void {
       console.log(`${this.name} is swimming`);
     }
   }
+  const cat = new Mammal('Cat', 2, 'Meow');
+cat.makeSound(); 
+cat.feedMilk(); 
+
+const parrot = new Bird('Parrot', 1, 'Squawk');
+parrot.makeSound(); 
+parrot.fly(); 
+
+const goldfish = new Fish('Goldfish', 3, 'Bloop');
+goldfish.makeSound(); 
+goldfish.swim(); 
